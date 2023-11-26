@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Sheet Clone</title>
+     <link rel="stylesheet" href="menu.css">
+     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="options">
+        <div class="menus" >
+        <div id="bold" onclick="onClickBoard(this)" class="active-option"  >B</div>
+        <div id="italic" onclick="onClickItalic(this)">I</div>
+        <div id="underlined" onclick="onClickUnderline(this)">U</div>
+        <i class="fa-solid fa-align-left text-align"  data-value="left" onclick="onClickTextAlign(this)"></i>
+        <i class="fa-solid fa-align-right text-align" data-value="right" onclick="onClickTextAlign(this)"></i>
+        <i class="fa-solid fa-align-center text-align" data-value="center" onclick="onClickTextAlign(this)"></i>
+        <div id="text-color">
+        <label for="color-picker">
+            <i class="fa-solid fa-eye-dropper"></i>
+        </label>
+        <input  onchange="onChangeTextColor(this)" type="color" id="color-picker" style="width :0 ;height:0">
+        </div>
+        <div id="bgcolor-picker">
+            <label for="color-picker">
+                <i class="fa-solid fa-fill"></i> 
+            </label>
+            <input  onchange="onChangeBackgroundColor(this)" type="color" id="bgcolor-picker" style="width :0 ;height:0">
+            </div>
+        </div>
+        <span id="active-cell">null</span>
+    </div>
+  
+    <div class="header" id="header">
+        <b style ="position:sticky;left :0 ;top :0 ;background-color: white;">S.NO</b>
+    </div>
+        <section id="body"></section>
+        <script src="./text.js"></script>
+    <script src="./script.js"></script>
+   
+</body>
+</html>

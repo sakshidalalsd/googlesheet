@@ -1,0 +1,45 @@
+
+.header{
+    position:sticky;
+    top:0px;
+    display: flex;
+    border:5px solid red;
+    width:fit-content;
+    z-index: 100;
+}
+.header>b{
+     border:1px solid blue;
+     min-width:100px;
+     text-align: center;
+     padding:10px 0px;
+    
+}
+.row{
+    display:flex;
+   
+}
+.row >b ,
+.row >div{
+    padding :10px 0px;
+   min-width:100px;
+    border: 1px solid #dfe4e9;
+  
+   
+}
+.row >b:first-child{
+    text-align: center;
+    background-color: red;
+    position:sticky;
+    top:0;
+}
+#options{
+    padding :10px;
+    background-color:beige;
+}
+#active-cell{
+    background-color: white;
+    padding :2px 10px;
+}
+#whatever{
+    display:flex;
+}
